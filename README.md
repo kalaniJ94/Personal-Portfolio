@@ -34,6 +34,8 @@ To add a screenshot, create an `assets/images` folder in your repository and upl
 
 Reset.css is the public domain, widely used Meyer Reset. Found here: https://meyerweb.com/eric/tools/css/reset/. As always, big shoutout to him, and open source coding. 
 
+Placeholder image: https://mtek3d.com/3d-printing-technologies/image-placeholder-500x500/
+
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.

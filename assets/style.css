@@ -1,42 +1,55 @@
 :root{
---white: #fff;
+--white: #ebe9e9e2;
 --grey: #4c5350;
 --gold: #79872b;
 
 }
 *{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--grey);
 
 }
 body{
 background-color: var(--white);
-
-}
-header{
-background-color: var(--grey);
-
 }
 
 main{
-
-}
-#About{
-
-}
-#Cards{
-    display: block;
-    
-}
-
-#Large{
-    display: block;
     width: 100%;
 }
 
-#About{
-   
-
+header{
+    border: #79872b solid;
+    display: relative;
 }
 
-#Contact{
-    display: inline;
+header nav{
+    display: flex;
+    flex: end  ;
+}
+
+#Work{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#Large{
+    width: 100%;
+    border: var(--gold) solid 1px;
+ 
+}
+
+#Cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: var(--gold) solid 1px;
+    padding: 10px;
+    width: 45%;
+}
+
+#Cards::after{
+}
+
+footer{
+
 }
