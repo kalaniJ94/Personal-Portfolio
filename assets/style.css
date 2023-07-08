@@ -1,0 +1,42 @@
+:root{
+--white: #fff;
+--grey: #4c5350;
+--gold: #79872b;
+
+}
+*{
+
+}
+body{
+background-color: var(--white);
+
+}
+header{
+background-color: var(--grey);
+
+}
+
+main{
+
+}
+#About{
+
+}
+#Cards{
+    display: block;
+    
+}
+
+#Large{
+    display: block;
+    width: 100%;
+}
+
+#About{
+   
+
+}
+
+#Contact{
+    display: inline;
+}
