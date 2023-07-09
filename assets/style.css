@@ -16,9 +16,11 @@ body {
 }
 
 main {
-    width: 100%;
+    width: 75%;
+    display: inline-block;
 
 }
+
 /* header only */
 header {
     border: #79872b solid;
@@ -52,14 +54,25 @@ header nav ul li{
 #About{
     height: 200px;
 }
+#About h2{
+    float: left;
+    height: 200px;
+    border-right: solid 10px var(--box);
+    margin: 0px 50px 0px 50px;
+}
+
 #Work {
     display: flex;
     flex-wrap: wrap;
 }
+
 /* Large card only! */
 #Large {
     border: var(--gold) solid 1px;
-    display: relative;
+    display: flex;
+    width: 50%;
+    align-items: center;
+    float: right;
   }
 
 #Large img{
@@ -77,19 +90,22 @@ header nav ul li{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    border: var(--gold) solid 1px;
-    padding: 10px;
-    width: 45%;
+    border: var(--grey) solid 1px;
+    padding: 2px;
+    width: 33%;
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
+    margin: 10px;
 }
 
 #Cards img{
-width: 100%
+width: 100%;
+
 }
 
 #Cards h4{
     background-color: var(--gold);
+    margin: 0px;
 }
 
 /* Creates hover effect */
@@ -100,6 +116,7 @@ width: 100%
 #Cards:hover {
     box-shadow: inset 0px 0px 8px var(--gold) , 0 0 15px var(--gold);
 }
+
 /* Footer section */
 footer {
     border: var(--gold) solid 1px;
