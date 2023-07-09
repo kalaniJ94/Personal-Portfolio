@@ -36,6 +36,8 @@ Reset.css is the public domain, widely used Meyer Reset. Found here: https://mey
 
 Placeholder image: https://mtek3d.com/3d-printing-technologies/image-placeholder-500x500/
 
+Stock images were found at https://www.pexels.com/search/code/
+
 List your collaborators, if any, with links to their GitHub profiles.
 
 If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
