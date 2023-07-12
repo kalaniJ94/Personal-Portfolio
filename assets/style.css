@@ -26,11 +26,12 @@ header {
     display: relative;
     background-color: var(--box);
 }
-header h1{
+
+header h1 {
     text-align: center;
 }
 
-header p{
+header p {
     text-align: start;
     margin-left: 25px;
 }
@@ -41,30 +42,33 @@ header nav {
     width: 75%;
 }
 
-header nav ul{
+header nav ul {
     display: flex;
     list-style-type: none;
     width: 100%;
- 
-}
-header nav ul li{
-    display: flex;
-   justify-content: flex-end;
-   padding: 0px 25px 0px 25px;
-   width: 100%;
+
 }
 
-header img{
+header nav ul li {
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px 25px 0px 25px;
+    width: 100%;
+}
+
+header img {
     width: 150px;
     float: right;
     margin-right: 25px;
 
 }
+
 /* About Me box */
-#About{
+#About {
     height: 100px;
 }
-#About h2{
+
+#About h2 {
     float: left;
     height: 100px;
     border-right: solid 10px var(--box);
@@ -72,18 +76,19 @@ header img{
     padding-right: 10px;
 }
 
-#About p{
+#About p {
     margin: 20px 0px 0px 0px;
     width: 80%
 }
 
 
-main h2{
+/* Work tag around the Work section */
+main h2 {
     border-right: 10px var(--box) solid;
     float: left;
     height: 519px;
-    margin: 0px 50px 0px 50px;
-    padding-right: 57px;
+    margin: 0px 1px 0px 50px;
+    padding-right: 20px;
 }
 
 /* Large card only! */
@@ -96,8 +101,7 @@ main h2{
     height: 200px;
     flex-direction: column;
     margin: 0px 200px 40px 0px;
-    
-
+    border: var(--gold) solid 5px;
 }
 
 #Large a {
@@ -105,163 +109,182 @@ main h2{
     height: 100%;
 }
 
-#Large a img{
+#Large a img {
     min-width: 100%;
-    max-height: 200px; 
-    border-radius: 5%;
+    max-height: 200px;
 }
 
-#Large h4{
+#Large span {
     background-color: var(--gold);
     max-width: fit-content;
     height: 25px;
-    
+    color: black;
+
 }
-/* Smaller four cards */
+
+/* Container for the smaller four cards */
 #Work {
-   width: 80%;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr;
-    gap: 35px  ;
+    width: 80%;
+    display: flex;
     float: right;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
-
+/* The cards themselves */
 #Cards {
     display: flex;
     flex-wrap: wrap;
     border: var(--grey) solid 1px;
     border-radius: 8px;
     transition: all 0.5s ease-in-out;
-    margin: 10px 25px 10px 250px;
     height: 100px;
+    border: var(--gold) solid 5px;
+    margin: 35px;
+
+    
 
 }
 
-#Cards a{
+#Cards a {
     width: 100%;
     height: 100%;
 }
 
-#Cards a img{
-width: 100%;
-height: 100%;
-border-radius: 5%;
+#Cards a img {
+    width: 100%;
+    height: 100%;
 
 }
 
-#Cards h4{
+#Cards span {
     background-color: var(--gold);
     margin: 0px;
+    color: black;
 }
 
 /* Creates hover effect */
-#Large:hover{
-    box-shadow: inset 0px 0px 8px var(--gold) , 0 0 15px var(--gold);
+#Large:hover {
+    box-shadow: inset 0px 0px 8px var(--gold), 0 0 15px var(--gold);
 }
 
 #Cards:hover {
-    box-shadow: inset 0px 0px 8px var(--gold) , 0 0 15px var(--gold);
+    box-shadow: inset 0px 0px 8px var(--gold), 0 0 15px var(--gold);
 }
 
 /* Footer section */
 footer {
     border: var(--gold) solid 1px;
-    background-color:var(--box);
+    background-color: var(--box);
+    margin-top: 50px;
 }
 
-footer ul{
+footer ul {
     font-size: larger;
     display: flex;
     list-style-type: none;
 }
 
-footer ul li{
-display: flex;
-flex-direction: row;
-width: 75%;
-text-decoration: underline;
+footer ul li {
+    display: flex;
+    flex-direction: row;
+    width: 75%;
+    text-decoration: underline;
 }
 
 /* Media Queries */
 
-
 /*Large Devices*/
 
-@media screen and (max-width: 992px) {
+/* @media screen and (max-width: 945px) {}
+#Cards{
+    height: 70px;
 
-}
+   }
+main h2{
+    padding-right: 50px;
+} */
 
 /*Medium Devices*/
 @media screen and (max-width: 768px) {
-    header{
+    header {
         align-items: center;
         margin-bottom: 25px;
     }
-    main h2{
-       border: 0px;
-       height: fit-content;
-       margin-bottom: 25px;
-       width: 100%;
-       text-align: center;
-       margin: 0px;
+
+    main h2 {
+        border: 0px;
+        height: fit-content;
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: center;
+        margin: 0px;
 
     }
-    #About{
+
+    #About {
         display: inline-block;
         padding-bottom: 25px;
     }
-    #About h2{
+
+    #About h2 {
         float: none;
         border: none;
         height: auto;
         text-align: center;
     }
-    #About p{
+
+    #About p {
         margin: 10px 0px 25px 0px;
     }
-    #About img{
+
+    #About img {
         float: none;
         align-self: center;
     }
-    #Large{
+
+    #Large {
         float: none;
         width: 100%;
         height: 300px;
     }
 
-    #Large a img{
+    #Large a img {
         max-height: 300px;
 
     }
 
-    #Large h4{
+    #Large h4 {
         margin: 0px 0px 25px 0px;
     }
 
-    #Work{
+    #Work {
         display: block;
+        float: none;
+        margin-left: 100px;
     }
 
-    #Cards{
+    #Cards {
         display: inline-block;
         height: 250px;
         margin: 10px 25px 10px 0px;
+
     }
 
-    #Cards h4{
+    #Cards h4 {
         margin: 0px 15px 15px 15px;
     }
 
-    footer{
+    footer {
         margin-top: 25px;
     }
-    footer ul li{
+
+    footer ul li {
         padding: 15px;
     }
-    footer h2{
-        text-align: center  ;
+
+    footer h2 {
+        text-align: center;
     }
 
 }
@@ -269,9 +292,13 @@ text-decoration: underline;
 /*Small Devices*/
 
 @media screen and (max-width: 600px) {
-#Large{
-    margin: 0px 0px 0px 10px;
-}
+    #Large {
+        margin: 0px 0px 0px 10px;
+    }
+
+    #About{
+        margin: 10px 0px 0px 75px;
+    }
 
 }
 
@@ -279,11 +306,11 @@ text-decoration: underline;
 
 @media screen and (max-width: 500px) {
 
-    header{
+    header {
         display: block;
     }
 
-    #About{
+    #About {
         text-align: center;
     }
 
