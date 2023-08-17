@@ -100,8 +100,10 @@ main h2 {
     float: right;
     height: 200px;
     flex-direction: column;
-    margin: 0px 200px 40px 0px;
+    margin: 50px 200px 40px 0px;
     border: var(--gold) solid 5px;
+    
+    
 }
 
 #Large a {
@@ -109,7 +111,7 @@ main h2 {
     height: 100%;
 }
 
-#Large a img {
+#Large img {
     min-width: 100%;
     max-height: 200px;
 }
